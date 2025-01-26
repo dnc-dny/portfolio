@@ -1,0 +1,490 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.inner:after,
+div:after,
+section:after,
+.col5>div:after,
+.col2:after,
+.col3 .worksWrap:after,
+.col4:after,
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/*  ancher  */
+a {
+  color: #222;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+a:visit,
+a:hover,
+a:link {
+  color: #222;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+dl {
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+dt {
+  width: 150px;
+  padding: 5px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+dd {
+  width: calc(100% - 150px);
+  padding: 5px;
+}
+
+/*  col2     */
+.col4,
+.col3,
+.col2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.col2 {
+  margin-right: -10px;
+}
+
+.col2>div {
+  width: calc(50% - 10px);
+  margin-right: 15px;
+}
+
+.col2>div:nth-child(n+3) {
+  margin-top: 15px;
+}
+
+/*  col3     */
+.col3 {
+  margin-right: -25px;
+}
+
+.col3 img {
+  width: 100%;
+}
+
+.col3>li {
+  width: calc(33% - 15px);
+  margin-right: 15px;
+}
+
+.col3>li:nth-child(3n) {
+  margin-right: 15px;
+}
+
+.col3>li:nth-child(n+4) {
+  margin-top: 19px;
+}
+
+/*  col4     */
+.col4>li {
+  width: calc(25% - 15px);
+  margin-right: 15px;
+}
+
+.col4>li:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.col4>li:nth-child(n+5) {
+  margin-top: 19px;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+.inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/*-------------------------/*-------------------------*/
+/*  form/*-------------------------/*-------------------------*/
+table.formTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table.formTable td,
+table.formTable th {
+  width: 330px;
+  display: block;
+}
+
+table.formTable textarea,
+table.formTable input {
+  width: 330px;
+  padding: 5px;
+}
+
+table.formTable th {
+  margin-top: 20px;
+  width: 100%;
+  font-weight: normal;
+  text-align: left;
+}
+
+.btn input {
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #222;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.btn input:hover {
+  background: #eee;
+}
+
+/*-------------------------/*-------------------------*/
+@media (max-width: 767px) {
+  .inner {
+    padding: 0 10px;
+  }
+
+  /*-------------------------/*-------------------------*/
+  .col4,
+  .col3,
+  .col2 {
+    display: block;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+
+  .col3>li,
+  .col2>div,
+  .col4>li {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .col3>li:nth-child(3n) {
+    margin: 0 auto 20px;
+  }
+
+  /*-------------------------/*-------------------------*/
+  dl,
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  dl {
+    margin: 0 auto;
+    border-width: 0 1 1 1;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    text-align: left;
+  }
+
+  dt {
+    float: none;
+    clear: both;
+    width: 100%;
+    border-width: 1 0 0 0;
+    border-style: solid;
+    border-color: black;
+    opacity: 0.5;
+    padding: 0px;
+    padding-left: 10px;
+  }
+
+  dd {
+    border-width: 1 0 0 1;
+    border-style: solid;
+    border-color: black;
+    padding: 0px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  /*-------------------------/*-------------------------*/
+  #formWrap h3 {
+    width: 100%;
+  }
+
+  #formWrap {
+    float: none;
+    width: 100%;
+  }
+
+  table.formTable textarea,
+  table.formTable input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  table.formTable td,
+  table.formTable th {
+    width: 100%;
+    display: block;
+  }
+
+  #formWrap h3 {
+    width: 100%;
+  }
+
+  #formWrap {
+    float: none;
+    width: 100%;
+  }
+
+  table.formTable textarea,
+  table.formTable input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  table.formTable td,
+  table.formTable th {
+    width: 100%;
+    display: block;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+}
