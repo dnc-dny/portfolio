@@ -22,7 +22,9 @@ body {
 
 .section_inner {
   width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .section_ttl {
@@ -42,8 +44,13 @@ body {
 /* header */
 header {
   background-color: #648d99;
+  width: 100%;
   height: 80px;
   line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .nav_list {
@@ -65,9 +72,11 @@ header {
 /* main */
 #main {
   width: 100%;
-  background: url(../images/MV_1.jpg);
+  background: url(../images/MV_1.jpg) no-repeat center;
   background-size: cover;
-  height: 946px;
+  height: 100vh;
+  min-height: 900px;
+  position: relative;
 }
 
 .main_text {
@@ -141,10 +150,19 @@ header {
 .profile_content {
   display: flex;
   align-items: center;
+  gap: 60px;
+}
+
+.profile_image {
+  width: 50%;
+}
+
+.profile_image img {
+  max-width: 100%;
 }
 
 .profile_text {
-  margin-left: 60px;
+  width: 50%;
 }
 
 .name_en {
@@ -166,6 +184,7 @@ header {
 
 .btn_more {
   text-align: right;
+  margin-top: 60px;
 }
 
 /* skills */
@@ -175,14 +194,15 @@ header {
 
 .skills_wrap {
   display: flex;
+  gap: 60px;
 }
 
 .skills_item {
-  width: 360px;
+  width: 33%;
 }
 
-.skills_item+.skills_item {
-  margin-left: 60px;
+.skills_item img {
+  max-width: 100%;
 }
 
 .skills_ttl {
@@ -227,4 +247,82 @@ header {
   display: block;
   margin-top: 60px;
   text-align: right;
+}
+
+/* other */
+.circleText {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.circleText {
+  overflow: visible;
+  /* 円からはみ出した部分を表示 */
+}
+
+.circleText__circle {
+  fill: none;
+  /* 円の塗りを削除 */
+}
+
+.circleText__text {
+  fill: #fff;
+  font-size: 8px;
+  letter-spacing: 1em;
+}
+
+.arrow {
+  line-height: 1;
+  position: relative;
+}
+
+.arrow.-right {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: skew(45deg);
+}
+
+.totop {
+  width: 100%;
+  margin-top: 60px;
+  text-align: right;
+}
+
+.totop a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.totop a::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(-45deg) translate(-25%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (max-width:767px) {
+  .profile_content {
+    display: block;
+  }
+
+  .profile_content>* {
+    width: 100%;
+  }
 }
