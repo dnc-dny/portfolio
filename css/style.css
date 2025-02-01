@@ -68,6 +68,10 @@ header {
   margin-left: 50px;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 
 /* main */
 #main {
@@ -318,6 +322,30 @@ header {
 }
 
 @media screen and (max-width:767px) {
+  .hamburger-menu {
+    display: block;
+    text-align: right;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .items_wrap {
+    display: block;
+  }
+
+  .items_item {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .items_item:not(:nth-child(1)) {
+    margin-top: 60px;
+  }
+
   .profile_content {
     display: block;
   }
@@ -325,4 +353,32 @@ header {
   .profile_content>* {
     width: 100%;
   }
+
+  .name_en {
+    margin-top: 60px;
+  }
+
+  .name_en,
+  .name_ja,
+  .birth,
+  .address {
+    text-align: center;
+  }
+
+  .skills_wrap {
+    display: block;
+  }
+
+  .skills_item {
+    width: 100%;
+  }
+
+  .skills_item:not(:nth-child(1)) {
+    margin-top: 60px;
+  }
+
+  .skills_item img {
+    width: 100%;
+  }
+
 }
