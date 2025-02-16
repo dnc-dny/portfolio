@@ -1,0 +1,480 @@
+@charset "utf-8";
+
+/*-------------------------*/
+/*  base
+/*-------------------------*/
+body {
+    font-family: "メイリオ", Meiryo, 'Kosugi Maru', sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    position: relative;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #111;
+}
+
+/*-------------------------*/
+/*  common
+/*----------*/
+
+/* all */
+* {
+    box-sizing: border-box;
+}
+
+.section_wrap {
+    padding: 120px;
+}
+
+.section_inner {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section_ttl {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.section_sub_ttl {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+/* header */
+header {
+    background-color: #648d99c7;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.nav_item a {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.nav_item+.nav_item {
+    margin-left: 50px;
+}
+
+.hamburger_menu,
+.menu_items {
+    display: none;
+}
+
+
+/* main */
+#main {
+    width: 100%;
+    background: url(../images/MV_1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    position: relative;
+}
+
+.main_text {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1em;
+    padding-top: 220px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.main_text h1 {
+    font-size: 32px;
+}
+
+/* works */
+#works {
+    background-color: #C9D8E6;
+}
+
+.items_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 30px;
+}
+
+.items_item {
+    width: calc(33% - 30px);
+}
+
+.items_item img {
+    width: 100%;
+}
+
+.work_text_top {
+    display: flex;
+}
+
+.work_kind {
+    min-width: 73px;
+    font-size: 11px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-top: 8px;
+    background: #8fbecb;
+    text-align: center;
+}
+
+.work_month {
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: 9px;
+    color: #605A5A;
+}
+
+.work_ttl {
+    font-size: 24px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* profile */
+#profile {
+    background-color: #95BBC6;
+}
+
+.profile_content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.profile_image {
+    width: 50%;
+}
+
+.profile_image img {
+    max-width: 100%;
+}
+
+.profile_text {
+    width: 50%;
+}
+
+.name_en {
+    font-size: 32px;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+}
+
+.name_ja {
+    font-size: 24px;
+}
+
+.birth {
+    margin-top: 60px;
+}
+
+.other {
+    margin-top: 60px;
+}
+
+.btn_more {
+    text-align: right;
+    margin-top: 60px;
+}
+
+/* skills */
+#skills {
+    background-color: #95BBC6;
+}
+
+.skills_wrap {
+    display: flex;
+    gap: 60px;
+}
+
+.skills_item {
+    width: 33%;
+}
+
+.skills_item img {
+    max-width: 100%;
+}
+
+.skills_ttl {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skills_sub_ttl {
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills_text {
+    margin-top: 30px;
+}
+
+/* contact */
+#contact {
+    color: #fff;
+    background-color: #648d99;
+    text-align: center;
+}
+
+.contact_text {
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.btn_email {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 5px 50px;
+}
+
+/* footer */
+.footer {
+    color: #fff;
+    background-color: #2f4e55;
+    text-align: center;
+}
+
+.footer-cr {
+    display: block;
+    margin-top: 60px;
+    text-align: right;
+}
+
+/* other */
+.circleText {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.circleText {
+    overflow: visible;
+    /* 円からはみ出した部分を表示 */
+}
+
+.circleText__circle {
+    fill: none;
+    /* 円の塗りを削除 */
+}
+
+.circleText__text {
+    fill: #fff;
+    font-size: 8px;
+    letter-spacing: 1em;
+}
+
+.arrow {
+    line-height: 1;
+    position: relative;
+}
+
+.arrow.-right {
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: skew(45deg);
+}
+
+.totop {
+    width: 100%;
+    margin-top: 60px;
+    text-align: right;
+}
+
+.totop a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.totop a::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(-45deg) translate(-25%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@media screen and (max-width:767px) {
+    .hamburger_menu {
+        width: 40px;
+        height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .hamburger_menu span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .menu_items {
+        display: block;
+        position: absolute;
+        right: -100%;
+        width: 200px;
+        background: #444444d7;
+        transition: left 0.3s ease;
+        z-index: 999;
+        padding: 60px 20px 0;
+    }
+
+    .menu_items ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu_items li {
+        padding: 5px;
+    }
+
+    .menu_items a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu_items.active {
+        right: 0;
+    }
+
+    .hamburger_menu.active span:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .hamburger_menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger_menu.active span:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    #main {
+        background: url(../images/MV_1.jpg) no-repeat center right;
+        background-size: cover;
+        height: 73vh;
+        min-height: auto;
+    }
+
+    .main_text {
+        letter-spacing: 1em;
+        padding-top: 106px;
+        font-size: 11px;
+    }
+
+    .main_text h1 {
+        line-height: 1.3;
+        font-size: 29px;
+    }
+
+    .section_wrap {
+        padding: 120px 20px;
+    }
+
+    .circleText {
+        width: 100px;
+        height: 100px;
+        right: 30px;
+        bottom: 50px;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .items_wrap {
+        display: block;
+    }
+
+    .items_item {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .profile_content {
+        display: block;
+    }
+
+    .profile_content>* {
+        width: 100%;
+    }
+
+    .name_en {
+        margin-top: 60px;
+    }
+
+    .name_en,
+    .name_ja,
+    .birth,
+    .address {
+        text-align: center;
+    }
+
+    .skills_wrap {
+        display: block;
+    }
+
+    .skills_item {
+        width: 100%;
+    }
+
+    .skills_item:not(:nth-child(1)) {
+        margin-top: 60px;
+    }
+
+    .skills_item img {
+        width: 100%;
+    }
+    .btn_email {
+        padding: 5px 20px;
+        max-width: 100%;
+    }
+}
